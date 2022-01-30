@@ -1,0 +1,23 @@
+{
+  "name": "snake-ladder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev ./src/index.ts",
+    "test": "jest",
+    "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "clean": "rm -rf dist build",
+    "ts-node": "ts-node",
+    "docs": "typedoc --entryPoints src/server.ts",
+    "prod-start": "node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.13",
+    "typescript": "^4.5.5"
+  }
+}
